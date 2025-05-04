@@ -1,4 +1,4 @@
-# Operating System Simulator
+# An Operating System Simulator
 
 Overview:-
 
