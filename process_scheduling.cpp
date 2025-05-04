@@ -706,4 +706,4 @@ PYBIND11_MODULE(process_scheduling, m)
     m.def("Priority_Premption_scheduling", &Priority_Premption_scheduling);
     m.def("Round_Robin_scheduling", &Round_Robin_scheduling);
     m.def("HRRN_scheduling", &HRRN_scheduling);
-}
+} 

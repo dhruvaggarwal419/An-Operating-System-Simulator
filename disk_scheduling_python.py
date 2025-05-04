@@ -177,7 +177,7 @@ def disk_scheduling_app():
             for j in range(len(sorted_requests)-1, approxValue+1, -1):
                 positions.append(sorted_requests[j])
         else:
-            sorted_requests = sorted(requests)
+            sorted_requests = sorted(requests) 
             for i in range(0, len(sorted_requests)):
                 if sorted_requests[i] <= head:
                     approxValue = i

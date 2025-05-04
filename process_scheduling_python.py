@@ -93,7 +93,7 @@ def process_scheduling_app():
                 priority.append(priority_val)
         processes.append([arrival_time, burst_time])
 
-    t1 = None
+    t1 = None 
     t2 = None
 
     if option == "Round Robin":
