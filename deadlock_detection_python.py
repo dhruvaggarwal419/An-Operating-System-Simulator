@@ -44,9 +44,8 @@ def deadlock_detection_app():
         st.write("### Allocation Matrix (Current allocation)")
         for i in range(int(n)):
             row = st.text_input(
-                f"Allocation for Process P{i} (space separated {int(m)} numbers)",
-                key=f"alloc_row_{i}"
-            )
+                f"Enter resources allocated to Process P{i} (connected to R0 to R{int(m)-1})",
+key=f"alloc_row_{i}")
             if row:
                 allocation.append(list(map(int, row.strip().split())))
             else:
@@ -55,9 +54,8 @@ def deadlock_detection_app():
         st.write("### Max Matrix (Maximum demand)")
         for i in range(int(n)):
             row = st.text_input(
-                f"Max demand for Process P{i} (space separated {int(m)} numbers)",
-                key=f"max_row_{i}"
-            )
+                f"Enter maximum demand for Process P{i} (connected to R0 to R{int(m)-1})",
+key=f"max_row_{i}")
             if row:
                 max_matrix.append(list(map(int, row.strip().split())))
             else:
